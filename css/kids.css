@@ -1,11 +1,20 @@
 /* google font */
 
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 .quicksand-font{
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
+  font-style: normal;
+}
+
+.raleway-font{
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:600;
   font-style: normal;
 }
 
@@ -38,7 +47,7 @@ nav > a{
     padding: 7px;
 }
 
-/* nab name color */
+/* nav name color */
 #home{
     color: orange;
 }
@@ -109,9 +118,104 @@ hr{
     margin-top:16px;
 }
 
+/* Curriculum-section start */
+
+.Curriculum-section{
+    background-image: url(../assets/bg.png);
+    max-width: 1380px;
+    height:690px ;
+    margin: 0 auto;
+    /* justify-content: center;
+    align-items: center; */
+    text-align: center;
+}
+.card{
+    display: flex;
+    /* border: 2px solid green; */
+    justify-content: space-between;
+    /* gap: 52px; */
+    max-width:1300px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    margin-top: 38px;
+}
+
+/* card-01 */
+.Curriculum-card-1{
+    width: 300px;
+    height: 320px;
+    padding:28px ;
+    /* border: 2px solid green; */
+    border-radius: 10px;
+    margin-bottom: 16px;
+    background: linear-gradient(to bottom, #DEF5FF 0% ,#FFFFFF 40%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-description-1{
+    color: #808080;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 10px;
+}
 
 
+#read-btn-1{
+    color: #64C8FF;
+    margin-top:18px;
+}
 
+/* card-02 */
+
+.Curriculum-card-2{
+    width: 300px;
+    height: 320px;
+    padding:28px ;
+    /* border: 2px solid green; */
+    border-radius: 10px;
+    margin-bottom: 16px;
+    background: linear-gradient(to bottom, #FFF4DC 0% ,#FFFFFF 40%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-description-2{
+    color: #808080;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+#read-btn-2{
+    color: #F0AA00;
+    margin-top:18px;
+}
+
+/* card-03 */
+
+.Curriculum-card-3{
+    width: 300px;
+    height: 320px;
+    padding:28px ;
+    /* border: 2px solid green; */
+    border-radius: 10px;
+    margin-bottom: 16px;
+    background: linear-gradient(to bottom, #F2E8FF 0% ,#FFFFFF 40%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-description-3{
+    color: #808080;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+
+#read-btn-3{
+    color: #8700FF;
+    margin-top:18px;
+}
 /* responsive section start here */
 
 @media screen and (max-width:572px) {
@@ -152,5 +256,19 @@ hr{
  .hero-text{
     text-align: center;
  }
+.card{
+    flex-direction: column;
+    padding:42px;
+}
+ 
+.Curriculum-card-1 > div >img{
+    width: 50%;
+}
+.Curriculum-card-2 > div >img{
+    width: 50%;
+}
+.Curriculum-card-3 > div >img{
+    width: 50%;
+}
 
 }
