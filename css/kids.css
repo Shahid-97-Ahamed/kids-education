@@ -1,6 +1,7 @@
-/* *{
-    margin: 0 auto;
-} */
+*{
+    margin: 0;
+    padding: 0;
+}
 /* Header section */
 .logo{
     display: flex;
@@ -49,6 +50,9 @@ nav > a{
     display: none;
 }
 
+hr{
+    display: none;
+}
 
 
 
@@ -72,7 +76,17 @@ nav > a{
     justify-content: space-between;
     margin: 0 7px 0 7px;
     font-size: xx-large;
+    padding-bottom: 10px;
   }
- 
- 
+ hr{
+    display: block;
+    height: 1px;
+    background-color: orange;
+    border: none;  
+    width: 100vw; 
+    margin:0; 
+    position: relative;
+    left:0;
+ }
+
 }
