@@ -316,6 +316,79 @@ hr{
     margin-top: 36px;
 }
 
+/* footer section start */
+ 
+footer{
+    background-color:#01ACFD ;
+}
+
+.footer-main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  max-width: 980px;
+  height: 280px;
+  margin: 0 auto;
+  align-items: flex-start;
+  padding-top: 54px;
+  gap: 60px;
+}
+
+.footer-title {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.footer-title img {
+  margin-right: 10px;
+  width: 40px; /* Adjust size if needed */
+}
+
+.footer-title-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.footer-description {
+  color: #cecece;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+.About-School {
+  color: white;
+}
+
+.About-School > ul > li {
+  padding-top: 5px;
+  list-style-type: none; /* removes li dot */
+}
+
+.keep-title {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  line-height: 1.2;
+}
+
+.footer-img {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-main h2,
+.footer-main h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  color: white;
+  line-height: 1.2;
+}
+
 /* responsive section start here */
 
 @media screen and (max-width:572px) {
@@ -381,5 +454,32 @@ hr{
 .four-card{
     grid-template-columns: repeat(2, 1fr);
 }
+
+
+.footer-main {
+    width: 350px;
+    height: 620px;
+    grid-template-columns: 1fr;
+    text-align: left;
+    gap: 40px;
+    padding: 40px 20px;
+  }
+
+  .footer-title {
+    justify-content: left;
+  }
+
+  .footer-img {
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+
+ .footer-img img {
+    width: 28px;
+    height: 28px;
+  }
+  .About-School ul {
+    padding: 0;
+  }
 
 }
