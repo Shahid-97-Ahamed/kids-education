@@ -216,6 +216,106 @@ hr{
     color: #8700FF;
     margin-top:18px;
 }
+
+
+/* Story section start */
+.story-section {
+    background: 
+     url(../assets/bg.png) no-repeat center center, 
+    linear-gradient(to top, #FFEFD3 0%, white 100%);
+    background-size: cover;
+    max-width: 1370px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.story-main-title{
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.main-card{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+  
+}
+.card-1{
+    width: 480px;
+    height: 530px;
+    background-color: white;
+    /* border: 2px solid green; */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+}
+
+.card-1>.story-img>img{
+    width:100%;
+    border-radius: 22px 23px 0 0;
+}
+
+.story-title{
+    text-align: left;
+    margin-top: 16px;
+    padding-left: 36px;
+}
+
+.story-description{
+    color: #666666;
+    text-align: left;
+    margin-top:1.2rem;
+    padding: 1.7rem ;
+}
+
+.four-card {
+    /* border: 2px solid green; */
+    max-width: 1080px;
+    height: 570px;
+    border-radius: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.story-one {
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Take full height from grid cell */
+}
+
+.story-one-img img {
+    width: 100%;
+    height: 140px;
+    border-radius: 24px 24px 0 0;
+    display: block;
+}
+
+.story-one-title {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    padding-top:24px ;
+    text-align: center;
+}
+
+.story-btn{
+    width: 130px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 36px;
+}
+
 /* responsive section start here */
 
 @media screen and (max-width:572px) {
@@ -269,6 +369,17 @@ hr{
 }
 .Curriculum-card-3 > div >img{
     width: 50%;
+}
+ .story-section{
+    margin-top: 600px;
+    padding: 5px;
+ }
+.card-1{
+    display: none;
+}
+
+.four-card{
+    grid-template-columns: repeat(2, 1fr);
 }
 
 }
